@@ -1,0 +1,36 @@
+- dans un premier temps, faire du one hot encoding pour tous les features catégoriels
+	OK - one-hot encoder toutes les variables catégorielles
+		- s'assurer que les fichiers train et test sont bien encodés de la même façon
+	- régression logistique
+	- cross-validation
+	- prédictions
+	- format prédictions
+	- submissions
+
+- dans un second temps, encoder les features suivants en 1, 2, 3, ...:
+	- ExterQual, ExterCond, BsmtQual, BsmtCond, BsmtExposure, BsmtFinType1, BsmtFinType2, HeatingQC, KitchenQual, Functional
+
+- features pour lesquels on pourrait encoder en 1, 2, ... mais qui posent problème car on peut avoir des NA qui sont équivalents à "pas présent":
+	- FireplaceQu, GarageType, GarageFinish, GarageQual, GarageCond, PoolQC, Fence
+
+
+
+
+OK - fonction qui récupère les données
+	OK - train/test
+
+OK - fonction qui clean les données, indépendamment de train/test
+
+OK - création pipeline
+	- feature engineering
+
+OK - fonction qui entraîne un modèle
+	- récupération du modèle
+	- sauvegarde du modèle
+	- valeurs de cross-validation pour tous les groupes possibles d'hyperparamètres
+	- récupération du meilleur groupe d'hyperparamètres
+	- récupération des valeurs de cross-validation
+
+OK - fonction qui fait des prédictions
+
+- sauvegarde des prédictions
